@@ -76,9 +76,9 @@ document.addEventListener("DOMContentLoaded", function () {
                                         label += ': ';
                                     }
                                     if (context.parsed !== null) {
-                                        label += new Intl.NumberFormat('en-US', {
+                                        label += new Intl.NumberFormat('en-IN', {
                                             style: 'currency',
-                                            currency: 'USD'
+                                            currency: 'INR'
                                         }).format(context.parsed);
                                     }
                                     return label;
