@@ -3,7 +3,7 @@
  * Built on top of Bootstrap 5 Dark Theme
  */
 
- :root {
+:root {
     --bs-primary: #6366f1;
     --bs-primary-rgb: 99, 102, 241;
     --bs-secondary: #64748b;
@@ -33,7 +33,12 @@ body {
 }
 
 /* Typography Enhancements */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     letter-spacing: -0.025em;
     font-weight: 600;
 }
@@ -66,7 +71,8 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0.5rem;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: #ffffff !important;
     background-color: rgba(255, 255, 255, 0.05);
 }
@@ -106,14 +112,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Forms and Inputs */
-.form-control, .form-select, .input-group-text {
+.form-control,
+.form-select,
+.input-group-text {
     background-color: var(--input-bg);
     border: 1px solid var(--border-color);
     color: var(--bs-body-color);
     border-radius: 0.5rem;
 }
 
-.form-control:focus, .form-select:focus {
+.form-control:focus,
+.form-select:focus {
     background-color: var(--input-bg);
     border-color: var(--bs-primary);
     color: var(--bs-body-color);
@@ -147,7 +156,8 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 
-.btn-primary:hover, .btn-primary:focus {
+.btn-primary:hover,
+.btn-primary:focus {
     background-color: #4f46e5;
     border-color: #4f46e5;
     box-shadow: 0 0 0 0.25rem rgba(99, 102, 241, 0.5);
@@ -192,7 +202,8 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--bs-body-color);
 }
 
-td, th {
+td,
+th {
     vertical-align: middle;
 }
 
@@ -259,21 +270,25 @@ td, th {
     border-radius: 0.75rem;
     border-left: 4px solid;
 }
+
 .alert-success {
     background-color: rgba(16, 185, 129, 0.1);
     color: #34d399;
     border-left-color: #10b981;
 }
+
 .alert-danger {
     background-color: rgba(239, 68, 68, 0.1);
     color: #f87171;
     border-left-color: #ef4444;
 }
+
 .alert-info {
     background-color: rgba(59, 130, 246, 0.1);
     color: #60a5fa;
     border-left-color: #3b82f6;
 }
+
 .alert-warning {
     background-color: rgba(245, 158, 11, 0.1);
     color: #fbbf24;

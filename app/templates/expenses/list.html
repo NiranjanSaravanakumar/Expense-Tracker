@@ -103,7 +103,7 @@
                             {{ expense.description if expense.description else '-' }}
                         </td>
                         <td class="py-3 fw-bold text-nowrap">
-                            ₹{{ "%.2f"|format(expense.amount) }}
+                            ₹{{ expense.amount | format_inr }}
                         </td>
                         <td class="pe-4 py-3 text-end text-nowrap">
                             <div class="d-inline-flex gap-2">
