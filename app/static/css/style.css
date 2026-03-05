@@ -1,0 +1,297 @@
+/*
+ * ExpenseTracker Custom Styles
+ * Built on top of Bootstrap 5 Dark Theme
+ */
+
+ :root {
+    --bs-primary: #6366f1;
+    --bs-primary-rgb: 99, 102, 241;
+    --bs-secondary: #64748b;
+    --bs-body-bg: #0f172a;
+    --bs-body-color: #f8fafc;
+    --card-bg: #1e293b;
+    --sidebar-bg: #1e293b;
+    --border-color: #334155;
+    --input-bg: #0f172a;
+    --success-color: #10b981;
+    --danger-color: #ef4444;
+}
+
+[data-bs-theme="dark"] {
+    --bs-body-bg: var(--bs-body-bg);
+    --bs-body-color: var(--bs-body-color);
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Typography Enhancements */
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.025em;
+    font-weight: 600;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(30, 41, 59, 0.85) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    color: var(--bs-body-color) !important;
+}
+
+.navbar-brand i {
+    color: var(--bs-primary);
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #cbd5e1 !important;
+    transition: all 0.2s ease;
+    padding: 0.5rem 1rem !important;
+    border-radius: 0.5rem;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.btn-register-nav {
+    background-color: var(--bs-primary);
+    color: white !important;
+    padding: 0.4rem 1.2rem !important;
+    border-radius: 2rem;
+    margin-left: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.2);
+}
+
+.btn-register-nav:hover {
+    background-color: #4f46e5;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 8px -1px rgba(99, 102, 241, 0.3);
+}
+
+/* Cards */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card.bg-primary {
+    background: linear-gradient(135deg, #6366f1 0%, #4338ca 100%) !important;
+    border: none;
+}
+
+.card-header {
+    background-color: transparent;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Forms and Inputs */
+.form-control, .form-select, .input-group-text {
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-color);
+    color: var(--bs-body-color);
+    border-radius: 0.5rem;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: var(--input-bg);
+    border-color: var(--bs-primary);
+    color: var(--bs-body-color);
+    box-shadow: 0 0 0 0.25rem rgba(99, 102, 241, 0.25);
+}
+
+.input-group-text {
+    color: var(--bs-secondary);
+}
+
+.form-label {
+    color: #94a3b8;
+    font-weight: 500;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 0.5rem;
+    font-weight: 500;
+    padding: 0.5rem 1.2rem;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: white;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #4f46e5;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 0.25rem rgba(99, 102, 241, 0.5);
+}
+
+.btn-outline-primary {
+    color: #818cf8;
+    border-color: #818cf8;
+}
+
+.btn-outline-primary:hover {
+    background-color: #818cf8;
+    border-color: #818cf8;
+    color: #0f172a;
+}
+
+.btn-icon {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tables */
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-color: var(--bs-body-color);
+    --bs-table-border-color: var(--border-color);
+    color: var(--bs-body-color);
+}
+
+.table-light {
+    --bs-table-bg: rgba(255, 255, 255, 0.02);
+    --bs-table-color: #94a3b8;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+    color: var(--bs-body-color);
+}
+
+td, th {
+    vertical-align: middle;
+}
+
+/* Auth Cards */
+.auth-card {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    background: var(--card-bg);
+}
+
+.auth-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899);
+}
+
+.auth-icon-wrapper {
+    width: 64px;
+    height: 64px;
+    background: rgba(99, 102, 241, 0.1);
+    color: #818cf8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+/* Utilities */
+.tracking-wider {
+    letter-spacing: 0.1em;
+}
+
+.text-muted {
+    color: #94a3b8 !important;
+}
+
+.bg-light {
+    background-color: rgba(255, 255, 255, 0.02) !important;
+}
+
+/* Badges */
+.badge.bg-primary {
+    background-color: rgba(99, 102, 241, 0.2) !important;
+    color: #818cf8 !important;
+    border: 1px solid rgba(99, 102, 241, 0.3) !important;
+}
+
+/* Chart Container */
+.chart-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+/* Custom Alert styling */
+.alert {
+    border-radius: 0.75rem;
+    border-left: 4px solid;
+}
+.alert-success {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: #34d399;
+    border-left-color: #10b981;
+}
+.alert-danger {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #f87171;
+    border-left-color: #ef4444;
+}
+.alert-info {
+    background-color: rgba(59, 130, 246, 0.1);
+    color: #60a5fa;
+    border-left-color: #3b82f6;
+}
+.alert-warning {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: #fbbf24;
+    border-left-color: #f59e0b;
+}
+
+.btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Progress bar overrides */
+.progress {
+    background-color: var(--input-bg);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #6366f1, #818cf8);
+    border-radius: 1rem;
+}
