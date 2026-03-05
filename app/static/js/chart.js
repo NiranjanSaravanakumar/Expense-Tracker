@@ -12,20 +12,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const ctx = canvas.getContext('2d');
 
-    // Premium color palette generated for dark mode
+    // Dark Neon Theme colors
     const chartColors = [
-        '#6366f1', // Indigo primary
-        '#a855f7', // Purple
-        '#ec4899', // Pink
-        '#ef4444', // Red
-        '#f59e0b', // Amber
-        '#10b981', // Emerald
-        '#06b6d4', // Cyan
-        '#3b82f6', // Blue
-        '#8b5cf6', // Violet
-        '#f43f5e', // Rose
-        '#84cc16', // Lime
-        '#64748b'  // Slate (Other)
+        '#FFD500', // Primary Yellow
+        '#00FF90', // Income Neon Green
+        '#FF6F3C', // Expense Orange
+        '#B0B0B0', // Secondary Gray
+        '#FFB800', // Amber-Yellow
+        '#00E5FF', // Neon Cyan
+        '#FF4D8D', // Hot Pink
+        '#7B61FF', // Purple
+        '#00C9A7', // Teal
+        '#FF9A3C', // Light Orange
+        '#A8FF3E', // Lime
+        '#666666', // Dim Gray (Other)
     ];
 
     // Fetch data from API endpoint
